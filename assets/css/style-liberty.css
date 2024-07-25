@@ -446,15 +446,6 @@ legend+* {
   height: auto
 }
 
-[type=search] {
-  outline-offset: -2px;
-  -webkit-appearance: textfield
-}
-
-::-webkit-search-decoration {
-  -webkit-appearance: none
-}
-
 ::-webkit-color-swatch-wrapper {
   padding: 0
 }
@@ -4486,7 +4477,7 @@ fieldset:disabled .btn {
   padding-top: .3125rem;
   padding-bottom: .3125rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-decoration: none;
   white-space: nowrap
 }
@@ -11726,22 +11717,6 @@ fieldset:disabled .btn {
   --bg-layer: rgba(6, 31, 36, 0.9);
 }
 
-[data-theme="dark"] {
-  --primary-color: #007e6a;
-  --secondary-color: #02983f;
-  --font-color: #b7b7b7;
-  --bg-color: #01181d;
-  --heading-color: #fdfffc;
-  --border-color-light: rgba(255, 255, 255, 0.2);
-  --iframe-filter: grayscale(100%);
-  --bg-grey: #031f25;
-  --bg-light: #05242a;
-  --bg-dark-color: #27282b;
-  --disable-color: #5d5d5d;
-  --border-color: rgba(255, 255, 255, 0.1);
-  --bg-layer: rgba(6, 31, 36, 0.95);
-}
-
 .noscroll {
   overflow: hidden;
   height: 100vh;
@@ -11892,30 +11867,6 @@ p.white {
   }
 }
 
-/*-- //container --*/
-
-/*-- toggle switch --*/
-.theme-switch-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.theme-switch-wrapper em {
-  margin-left: 10px;
-  font-size: 1rem;
-}
-
-.theme-switch {
-  display: inline-block;
-  position: relative;
-  margin: 0;
-}
-
-.theme-switch input {
-  display: none;
-}
-
-/*-- //toggle switch --*/
 
 /* font awesome css */
 /*!
@@ -18330,255 +18281,6 @@ nav ul li a:hover {
   min-width: 12rem;
   padding: 1rem 0;
 }
-
-
-.navbar .search-right {
-  margin: 0 10px 0 10px;
-}
-
-.navbar form.search-box {
-  display: flex;
-  align-items: center;
-}
-
-.navbar form.search-box input {
-  font-size: 16px;
-  color: var(--heading-color);
-  border: none;
-  background: var(--bg-color);
-  padding: 10px 45px 10px 10px;
-  width: 100%;
-  border-radius: 4px;
-  border: 2px solid var(--primary-color);
-}
-
-button.search-btn {
-  position: absolute;
-  color: #fff;
-  right: 0;
-  padding: 10px 12px;
-  background: var(--primary-color);
-  border-radius: 0;
-}
-
-button.search-btn:hover {
-  color: var(--secondary-color);
-}
-
-/*-- /search --*/
-
-.cd-header-buttons {
-  /* position: absolute;
-  display: inline-block;
-  top: 35%;
-  right: 215px;
-  z-index: 99; */
-  transition: all 0.4s ease 0s;
-}
-header.nav-fixed .cd-header-buttons {
-  transition: all 0.4s ease 0s;
-}
-
-.cd-header-buttons li {
-	display: inline-block;
-}
-
-.cd-search-trigger,
-.cd-nav-trigger {
-	position: relative;
-	display: block;
-	width: 36px;
-	height: 36px;
-	overflow: hidden;
-	white-space: nowrap;
-	color: transparent;
-  z-index: 99;
-}
-
-.cd-search-trigger::before,
-.cd-search-trigger::after {
-	/* search icon */
-	content: '';
-	position: absolute;
-	-webkit-transition: opacity 0.3s;
-	-moz-transition: opacity 0.3s;
-	transition: opacity 0.3s;
-	/* Force Hardware Acceleration in WebKit */
-	-webkit-transform: translateZ(0);
-	-moz-transform: translateZ(0);
-	-ms-transform: translateZ(0);
-	-o-transform: translateZ(0);
-	transform: translateZ(0);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-.cd-search-trigger::before {
-  top: 10px;
-  left: 10px;
-  width: 16px;
-  height: 16px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
-	border: 3px solid #fff;
-}
-
-.cd-search-trigger::after {
-	height: 3px;
-	width: 8px;
-	background: #fff;
-	bottom: 9px;
-	right: 6px;
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-
-.cd-search-trigger span {
-	/* container for the X icon */
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-}
-
-.cd-search-trigger span::before,
-.cd-search-trigger span::after {
-	/* close icon */
-	content: '';
-	position: absolute;
-	display: inline-block;
-	height: 3px;
-	width: 22px;
-	top: 50%;
-	margin-top: -2px;
-	left: 50%;
-	margin-left: -11px;
-	background:#fff;
-	opacity: 0;
-	/* Force Hardware Acceleration in WebKit */
-	-webkit-transform: translateZ(0);
-	-moz-transform: translateZ(0);
-	-ms-transform: translateZ(0);
-	-o-transform: translateZ(0);
-	transform: translateZ(0);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
-	transition: opacity 0.3s, transform 0.3s;
-}
-
-.cd-search-trigger span::before {
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-
-.cd-search-trigger span::after {
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-}
-
-.cd-search-trigger.search-is-visible::before,
-.cd-search-trigger.search-is-visible::after {
-	/* hide search icon */
-	-moz-opacity: 0;
-	opacity: 0;
-}
-
-.cd-search-trigger.search-is-visible span::before,
-.cd-search-trigger.search-is-visible span::after {
-	/* show close icon */
-	-moz-opacity: 1;
-	opacity: 1;
-}
-
-.cd-search-trigger.search-is-visible span::before {
-	-webkit-transform: rotate(135deg);
-	-moz-transform: rotate(135deg);
-	-ms-transform: rotate(135deg);
-	-o-transform: rotate(135deg);
-	transform: rotate(135deg);
-}
-
-.cd-search-trigger.search-is-visible span::after {
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-
-.cd-search {
-	position: absolute;
-	width: 100%;
-	top: 5%;
-	left: 0;
-	z-index: 3;
-	opacity: 0;
-	visibility: hidden;
-	-webkit-transition: opacity .3s 0s, visibility 0s .3s;
-	-moz-transition: opacity .3s 0s, visibility 0s .3s;
-  transition: opacity .3s 0s, visibility 0s .3s;
-  margin: 0 auto;
-  right: 0;
-}
-
-.cd-search input {
-  border: none;
-  background: rgb(6 6 6 / 68%);
-  width: 100%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  font-size: 18px;
-  padding: 2em 3em;
-  color: #fff;
-  font-weight: 500;
-}
-
-.cd-search input::-webkit-input-placeholder {
-	color: #eee !important;
-}
-
-.cd-search input::-moz-placeholder {
-	color: #eee !important;
-}
-
-.cd-search input:-moz-placeholder {
-  color: #eee !important;
-}
-
-.cd-search input:-ms-input-placeholder {
-  color: #eee !important;
-}
-
-.cd-search input:focus {
-	outline: none;
-}
-
-.cd-search.is-visible {
-	-moz-opacity: 1;
-	opacity: 1;
-	visibility: visible;
-	-webkit-transition: opacity .3s 0s, visibility 0s 0s;
-	-moz-transition: opacity .3s 0s, visibility 0s 0s;
-	transition: opacity .3s 0s, visibility 0s 0s;
-}
-
-/*-- //search --*/
 
 @media only screen and (max-width: 1440px) {
   .navbar-expand-lg .nav_btn>li {
