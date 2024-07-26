@@ -22470,6 +22470,12 @@ div#small-dialog iframe {
   filter: var(--iframe-filter);
 }
 
+.error {
+    display: block;
+    color: rgb(49, 49, 49);
+    font-size: 14px;
+}
+
 @media screen and (max-width: 768px) {
   .w3l-contacts-12 .cont-main-top {
     grid-template-columns: 1fr;
