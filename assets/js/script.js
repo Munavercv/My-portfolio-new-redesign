@@ -51,3 +51,90 @@ if (jQuery().quicksand) {
 }//if quicksand
 
 });
+
+
+
+
+
+
+
+/* CONTACT FORM */
+
+/*$(document).ready(function(){
+    $("#submit-form").validate({
+        rules:{
+            name:{
+                required:true,
+                minlength:2
+            },
+            email:{
+                required:true,
+                email:true
+            },
+            message:{
+                required:true,
+                minlength:2
+            }
+
+        },
+        messages:{
+            name:{
+               required:"Please Enter your name",
+            }
+            
+        }
+    }),
+
+	// $('#submit-form').submit(function () {
+	// 	if($(this).validate()) {
+	// 		console.log('the form is valid');
+	// 	}
+	// });
+	
+})*/
+
+
+
+
+
+// form submit
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbx5YlflBsuNGVq9pPwNg63B73tjfopnZskI-sHqNjUU_AuN5rjYk_yqYPzhHs6FV7si/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+/* CONTACT FORM */
+
+
+
+/* HIRE FORM */
+$("#submit-hire-form").submit((e)=>{
+	e.preventDefault()
+	$.ajax({
+		url:"https://script.google.com/macros/s/AKfycbw2mB87WA5sKXhyYZjwMBTuWX9e5HiMl6nuL8BzIMS-Evsekc_kyTlzUqXO2GZixwV95w/exec",
+		data:$("#submit-hire-form").serialize(),
+		method:"post",
+		success:function (response){
+			alert("Form submitted successfully")
+			window.location.reload()
+			//window.location.href="https://google.com"
+		},
+		error:function (err){
+			alert("Something Error")
+
+		}
+	})
+})
+/* HIRE FORM */

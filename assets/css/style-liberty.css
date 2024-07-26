@@ -22401,10 +22401,10 @@ div#small-dialog iframe {
   margin: auto;
 }
 
-.w3l-contacts-12 .top-inputs {
+.w3l-contacts-12 .top-inputs{
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .w3l-contacts-12 form.main-input input,
@@ -22418,6 +22418,18 @@ div#small-dialog iframe {
   border-radius: 6px;
   width: 100%;
   background: var(--bg-grey);
+}
+
+.w3l-contacts-12 select{
+  color: var(--font-color);
+  font-size: 18px;
+  line-height: 28px;
+  padding: 15px 20px;
+  outline: none;
+  border: 1px solid var(--border-color-light);
+  border-radius: 6px;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 .w3l-contacts-12 form.main-input input:focus,

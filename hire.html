@@ -9,7 +9,7 @@ Author URL: http://w3layouts.com
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Muanver</title>
+    <title>Muanver:Hire me</title>
 
     <!-- google-fonts -->
     <link href="//fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;800&display=swap" rel="stylesheet">
@@ -51,7 +51,7 @@ Author URL: http://w3layouts.com
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ms-lg-auto align-items-center">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
@@ -60,13 +60,13 @@ Author URL: http://w3layouts.com
                     <li class="nav-item">
                         <a class="nav-link" href="services.html">Services</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
 
                     <!--/right-btn-->
                     <div class="header-btn mx-2">
-                        <a class="btn btn-style btn-primary mr-lg-5" href="contact.html"> Hire Me</a>
+                        <a class="btn btn-style btn-primary mr-lg-5" href="hire.html"> Hire Me</a>
                     </div>
                     <!--/right-btn-->
 
@@ -83,11 +83,11 @@ Author URL: http://w3layouts.com
     <div class="breadcrumb-bg breadcrumb-bg-about py-5">
         <div class="container py-lg-5 mt-5">
             <div class="banner-info-grid mt-5">
-                <h2 class="w3l-title-breadcrumb">Contact me</h2>
+                <h2 class="w3l-title-breadcrumb">Hire me</h2>
             </div>
             <ul class="breadcrumbs-custom-path">
                 <li><a href="index.html">Home</a></li>
-                <li class="active"><span class="fa fa-angle-right mx-2" aria-hidden="true"></span>Contact</li>
+                <li class="active"><span class="fa fa-angle-right mx-2" aria-hidden="true"></span>Hire</li>
             </ul>
         </div>
     </div>
@@ -101,18 +101,24 @@ Author URL: http://w3layouts.com
     <div class="contact-top pt-5">
         <div class="container py-lg-5 py-2">
             <div class="title-heading-w3 mx-auto text-center mb-sm-5 mb-4">
-                <h3 class="w3l-title-main">Want to get in touch?</h3>
+                <h3 class="w3l-title-main">Want to work with me?</h3>
             </div>
             <div class="d-grid cont-main-top">
                 <!-- contact form -->
                 <div class="contacts12-main">
-                    <form action="" class="main-input" id="submit-form">
+                    <form action="" class="main-input" id="submit-hire-form">
                         <div class="top-inputs d-grid">
                             <input type="text" placeholder="Name" name="name" id="w3lName" required>
                             <input type="email" name="email" placeholder="Email" id="w3lSender" required>
                         </div>
+                        <select id="subject" name="subject" class="form-select" required>
+                            <option value="Graphic Design">Graphic Design</option>
+                            <option value="Web design">Web design</option>
+                          </select>
                         <input type="text" placeholder="Phone Number" name="phone" id="w3lName" maxlength="13" pattern="[789][0-9]{9}">
-                        <textarea placeholder="Message" name="message" id="w3lMessage" rows="8" required></textarea>
+                        <textarea placeholder="Discription" name="discription" id="w3lMessage" rows="8" required>
+
+                        </textarea>
                         <div class="text-end">
                             <button type="submit" class="btn btn-primary btn-style">Submit Now</button>
                         </div>
@@ -213,80 +219,6 @@ Author URL: http://w3layouts.com
 
 <!--/owlcarousel-->
 <script src="assets/js/owl.carousel.js"></script>
-<!-- //tesimonials-->
-<script>
-    $(document).ready(function () {
-      $("#owl-demo1").owlCarousel({
-        loop: true,
-        margin: 30,
-        nav: false,
-        responsiveClass: true,
-        responsive: {
-          0: {
-            items: 1,
-            nav: false
-          },
-          768: {
-            items: 2,
-            nav: false
-          },
-          1024: {
-            items: 3,
-            nav: false
-          }
-        }
-      })
-    })
-  </script>
-<!-- //tesimonials-->
-
-<!-- /typig-text-->
-<script>
-    const typedTextSpan = document.querySelector(".typed-text");
-    const cursorSpan = document.querySelector(".cursor");
-
-    const textArray = ["Web Designer", "Web Developer", "Photographer", "Freelancer"];
-    const typingDelay = 200;
-    const erasingDelay = 10;
-    const newTextDelay = 100; // Delay between current and next text
-    let textArrayIndex = 0;
-    let charIndex = 0;
-
-    function type() {
-        if (charIndex < textArray[textArrayIndex].length) {
-            if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-            typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-            charIndex++;
-            setTimeout(type, typingDelay);
-        } else {
-            cursorSpan.classList.remove("typing");
-            setTimeout(erase, newTextDelay);
-        }
-    }
-
-    function erase() {
-        if (charIndex > 0) {
-            // add class 'typing' if there's none
-            if (!cursorSpan.classList.contains("typing")) {
-                cursorSpan.classList.add("typing");
-            }
-            typedTextSpan.textContent = textArray[textArrayIndex].substring(0, 0);
-            charIndex--;
-            setTimeout(erase, erasingDelay);
-        } else {
-            cursorSpan.classList.remove("typing");
-            textArrayIndex++;
-            if (textArrayIndex >= textArray.length) textArrayIndex = 0;
-            setTimeout(type, typingDelay);
-        }
-    }
-
-    document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
-        if (textArray.length) setTimeout(type, newTextDelay + 250);
-    });
-</script>
-<!-- //typig-text-->
-
 
 <!-- jQuery-Photo-filter-lightbox-portfolio-plugin -->
 <script src="assets/js/jquery-1.7.2.js"></script>
