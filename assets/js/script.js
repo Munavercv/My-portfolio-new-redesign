@@ -142,13 +142,20 @@ $(document).ready(function(){
             message:{
                 required:true,
                 minlength:2
-            }
+            },
+			phone:{
+				number:true
+			}
 
         },
         messages:{
             name:{
                required:"Please Enter your name",
-            }
+            },
+			email:{
+				required:"Please Enter your email"
+			},
+
             
         }
     })
@@ -196,7 +203,11 @@ $(document).ready(function(){
             message:{
                 required:true,
                 minlength:2
-            }
+            },
+			phone:{
+				required:true,
+				number:true
+			}
 
         },
         messages:{

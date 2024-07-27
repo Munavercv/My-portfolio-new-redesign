@@ -3182,14 +3182,14 @@ fieldset:disabled .btn {
 
 .btn-secondary {
   color: #ffffff;
-  background-color: #00c16e;
+  background-color: #00a45d;
   border-color: #00c16e;
 }
 
 .btn-secondary:hover {
   color: #ffffff;
-  background-color: #02a55f;
-  border-color: #02a55f;
+  background-color: #03be6d;
+  border-color: #007d47;
 }
 
 .btn-check:focus+.btn-secondary,
@@ -14876,7 +14876,11 @@ footer {
 }
 
 .copyright p {
-  color: #aaa;
+  color: #f2f2f2;
+}
+
+.copyright a {
+  color: #0db59a;
 }
 
 .copyright a:hover {
@@ -15436,8 +15440,7 @@ p.vhny-para {
   margin: auto;
 }
 
-.w3l-contacts-12 .top-inputs{
-  grid-template-columns: 1fr 1fr;
+.w3l-contacts-12 input{
   grid-gap: 20px;
   margin-bottom: 1rem;
 }
@@ -15465,6 +15468,10 @@ p.vhny-para {
   border-radius: 6px;
   width: 100%;
   margin-bottom: 1rem;
+}
+
+.w3l-contacts-12 select>option{
+  background-color: var(--bg-grey);
 }
 
 .w3l-contacts-12 form.main-input input:focus,
@@ -15506,9 +15513,11 @@ p.vhny-para {
 }
 
 .error {
+  color: red;
     display: block;
-    color: rgb(49, 49, 49);
+    /* color: rgb(49, 49, 49); */
     font-size: 14px;
+    margin: 1rem 0rem 1rem 0rem;
 }
 
 @media screen and (max-width: 768px) {

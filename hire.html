@@ -107,16 +107,15 @@ Author URL: http://w3layouts.com
                 <!-- contact form -->
                 <div class="contacts12-main">
                     <form action="" class="main-input" id="submit-hire-form">
-                        <div class="top-inputs d-grid">
                             <input type="text" placeholder="Name" name="name" id="w3lName">
                             <input type="email" name="email" placeholder="Email" id="w3lSender">
-                        </div>
-                        <select id="subject" name="subject" class="form-select" required>
-                            <option value="Graphic Design">Graphic Design</option>
+                        <select id="subject" name="subject" class="form-select">
+                            <option selected>Select service</option>
                             <option value="Web design">Web design</option>
+                            <option value="Graphic Design">Graphic Design</option>
                           </select>
-                        <input type="text" placeholder="Phone Number" name="phone" id="w3lName" maxlength="13" pattern="[789][0-9]{9}">
-                            <textarea placeholder="Discription" name="message" id="w3lMessage" rows="8"></textarea>
+                        <input type="text" placeholder="Phone Number" name="phone" id="w3lPhone" maxlength="13">
+                            <textarea placeholder="Discription" name="message" id="w3lMessage" rows="5"></textarea>
                         <div class="text-end">
                             <button type="submit" class="btn btn-primary btn-style">Submit Now</button>
                         </div>
@@ -211,19 +210,6 @@ Author URL: http://w3layouts.com
 </script>
 <!-- //move top -->
 
-<!-- common jquery plugin -->
-<script src="assets/js/jquery-3.3.1.min.js"></script>
-<!-- //common jquery plugin -->
-
-<!--/owlcarousel-->
-<script src="assets/js/owl.carousel.js"></script>
-
-<!-- jQuery-Photo-filter-lightbox-portfolio-plugin -->
-<script src="assets/js/jquery-1.7.2.js"></script>
-<script src="assets/js/jquery.quicksand.js"></script>
-<script src="assets/js/jquery.prettyPhoto.js"></script>
-<!-- //jQuery-Photo-filter-lightbox-portfolio-plugin -->
-
 <!-- MENU-JS -->
 <script>
     $(window).on("scroll", function () {
@@ -264,9 +250,9 @@ Author URL: http://w3layouts.com
 <!-- //disable body scroll which navbar is in active -->
 
 <!-- FORM VALIDATION -->
-<script src="assets/js/script.js"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
 
 
 <!--bootstrap-->
