@@ -9,12 +9,12 @@ Author URL: http://w3layouts.com
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Muanver:about</title>
+    <title>Munaver:about</title>
 
     <!-- google-fonts -->
-    <link href="//fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;800&display=swap" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- //google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <!-- //google-fonts -->
 
     <!-- Template CSS Style link -->
     <link rel="stylesheet" href="assets/css/style-liberty.css">
@@ -119,7 +119,7 @@ Author URL: http://w3layouts.com
                         <h6 class="progress-tittle">Responsive Web Design</h6>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 30%" 
-                            aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                            aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" aria-label="Responsive web design">
                             </div>
                         </div>
                     </div>
@@ -127,7 +127,7 @@ Author URL: http://w3layouts.com
                         <h6 class="progress-tittle">Graphic Design</h6>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%"
-                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="Photography">
                             </div>
                         </div>
                     </div>
@@ -135,7 +135,7 @@ Author URL: http://w3layouts.com
                         <h6 class="progress-tittle">Photography</h6>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 40%"
-                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" aria-label="Graphic design">
                             </div>
                         </div>
                     </div>
@@ -362,7 +362,7 @@ Author URL: http://w3layouts.com
             <div class="col-lg-6 text-lg-end text-center mt-lg-0 mt-4">
                 <div class="social">
                     <ul>
-                        <li><a href="https://facebook.com/Im.Munaver"><span class="fab me-2 fa-facebook-f"></span></a></li>
+                        <li><a href="https://facebook.com/Im.Munaver" aria-label="follow me on facebook"><span class="fab me-2 fa-facebook-f"></span></a></li>
                         <li><a href="https://x.com/immunaver"><span class="fa-brands me-2 fa-x-twitter"></span></a></li>
                         <li><a href="https://www.linkedin.com/in/muhammed-munaver-502071289"><span class="fa-brands me-2 fa-linkedin-in"></span></a></li>
                         <li><a href="https://instagram.com/im.munaver"><span class="fa-brands me-2 fa-instagram"></span></a></li>
@@ -381,107 +381,11 @@ Author URL: http://w3layouts.com
 <button onclick="topFunction()" id="movetop" title="Go to top">
     <span class="fas fa-level-up-alt" aria-hidden="true"></span>
 </button>
-<script>
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () {
-        scrollFunction()
-    };
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("movetop").style.display = "block";
-        } else {
-            document.getElementById("movetop").style.display = "none";
-        }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-</script>
-<!-- //move top -->
-
-<!-- common jquery plugin -->
-<script src="assets/js/jquery-3.3.1.min.js"></script>
-<!-- //common jquery plugin -->
-
-<!-- video popup -->
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
-<!-- <script>
-  $(document).ready(function () {
-    $('.popup-with-zoom-anim').magnificPopup({
-      type: 'inline',
-
-      fixedContentPos: false,
-      fixedBgPos: true,
-
-      overflowY: 'auto',
-
-      closeBtnInside: true,
-      preloader: false,
-
-      midClick: true,
-      removalDelay: 300,
-      mainClass: 'my-mfp-zoom-in'
-    });
-
-    $('.popup-with-move-anim').magnificPopup({
-      type: 'inline',
-
-      fixedContentPos: false,
-      fixedBgPos: true,
-
-      overflowY: 'auto',
-
-      closeBtnInside: true,
-      preloader: false,
-
-      midClick: true,
-      removalDelay: 300,
-      mainClass: 'my-mfp-slide-bottom'
-    });
-  });
-</script> -->
-<!-- //video popup -->
-
-<!--/owlcarousel-->
-<script src="assets/js/owl.carousel.js"></script>
-
-<!-- script for tesimonials carousel slider -->
-<!-- <script>
-    $(document).ready(function () {
-      $("#owl-demo1").owlCarousel({
-        loop: true,
-        margin: 30,
-        nav: false,
-        responsiveClass: true,
-        responsive: {
-          0: {
-            items: 1,
-            nav: false
-          },
-          768: {
-            items: 2,
-            nav: false
-          },
-          1024: {
-            items: 3,
-            nav: false
-          }
-        }
-      })
-    })
-  </script> -->
-  <!-- //script for tesimonials carousel slider -->
-  
-<!-- jQuery-Photo-filter-lightbox-portfolio-plugin -->
-<script src="assets/js/jquery-1.7.2.js"></script>
-<script src="assets/js/jquery.quicksand.js"></script>
 <script src="assets/js/script.js"></script>
-<script src="assets/js/jquery.prettyPhoto.js"></script>
-<!-- //jQuery-Photo-filter-lightbox-portfolio-plugin -->
+<script
+src="https://code.jquery.com/jquery-3.7.1.js"
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+crossorigin="anonymous"></script>
 
 <!-- MENU-JS -->
 <script>

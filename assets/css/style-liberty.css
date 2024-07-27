@@ -3177,19 +3177,19 @@ fieldset:disabled .btn {
 .btn-primary:disabled {
   color: #fff;
   background-color: #025b4d;
-  border-color: #025b4d;
+  border-color: #038673;
 }
 
 .btn-secondary {
   color: #ffffff;
-  background-color: #00a45d;
+  background-color: #046f41;
   border-color: #00c16e;
 }
 
 .btn-secondary:hover {
   color: #ffffff;
-  background-color: #03be6d;
-  border-color: #007d47;
+  background-color: #049054;
+  border-color: #026c3e;
 }
 
 .btn-check:focus+.btn-secondary,
@@ -14880,7 +14880,8 @@ footer {
 }
 
 .copyright a {
-  color: #0db59a;
+  color: #75f4e0;
+  text-decoration: underline;
 }
 
 .copyright a:hover {
