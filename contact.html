@@ -107,10 +107,14 @@ Author URL: http://w3layouts.com
                 <!-- contact form -->
                 <div class="contacts12-main">
                     <form action="" class="main-input" id="submit-form">
+                        <label class="error" for="w3lName" style="display: none;"></label>
                             <input type="text" placeholder="Name" name="name" id="w3lName">
+                            <label for="w3lSender" class="error" style="display: none;"></label>
                             <input type="email" name="email" placeholder="Email" id="w3lSender">
-                        <input type="text" placeholder="Phone Number" name="phone" id="w3lNumber" maxlength="13">
+                            <label for="w3lNumber" class="error" style="display: none;"></label>
+                        <input type="text" placeholder="Phone Number(optional)" name="phone" id="w3lNumber" maxlength="30">
                         <textarea placeholder="Message" name="message" id="w3lMessage" rows="8"></textarea>
+                        <label for="w3lMessage" class="error" style="display: none;"></label>
                         <div class="text-end">
                             <button type="submit" class="btn btn-primary btn-style">Submit Now</button>
                         </div>
@@ -225,11 +229,11 @@ Author URL: http://w3layouts.com
 <!-- //disable body scroll which navbar is in active -->
 
 
-<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
 <script
 src="https://code.jquery.com/jquery-3.7.1.js"
 integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
 crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
 
 <script src="assets/js/script.js"></script>
 

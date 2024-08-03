@@ -107,14 +107,18 @@ Author URL: http://w3layouts.com
                 <!-- contact form -->
                 <div class="contacts12-main">
                     <form action="" class="main-input" id="submit-hire-form">
+                            <label class="error" for="w3lName" style="display: none;"></label>
                             <input type="text" placeholder="Name" name="name" id="w3lName">
+                            <label class="error" for="w3lSender" style="display: none;"></label>
                             <input type="email" name="email" placeholder="Email" id="w3lSender">
-                        <select id="subject" name="subject" class="form-select">
-                            <option selected>Select service</option>
-                            <option value="Web design">Web design</option>
-                            <option value="Graphic Design">Graphic Design</option>
+                            <label class="error" for="subject" style="display: none;"></label>
+                            <select id="subject" name="subject" class="form-select select-box">
+                                <option selected value="default">Select service</option>
+                                <option value="Web design">Web design</option>
+                                <option value="Graphic Design">Graphic Design</option>
                           </select>
-                        <input type="text" placeholder="Phone Number" name="phone" id="w3lPhone" maxlength="13">
+                          <label class="error" for="w3lPhone" style="display: none;"></label>
+                          <input type="text" placeholder="Phone Number(optional)" name="phone" id="w3lPhone" maxlength="30">
                             <textarea placeholder="Discription" name="message" id="w3lMessage" rows="5"></textarea>
                         <div class="text-end">
                             <button type="submit" class="btn btn-primary btn-style">Submit Now</button>
@@ -250,8 +254,8 @@ Author URL: http://w3layouts.com
 <!-- //disable body scroll which navbar is in active -->
 
 <!-- FORM VALIDATION -->
-<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
 <script src="assets/js/script.js"></script>
 
 

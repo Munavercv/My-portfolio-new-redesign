@@ -2484,6 +2484,8 @@ textarea.form-control-lg {
   font-size: 1.25rem
 }
 
+.select-box
+
 .form-check {
   display: block;
   min-height: 1.5rem;
@@ -4476,7 +4478,7 @@ fieldset:disabled .btn {
   margin-right: 1rem;
   font-size: 1.5rem;
   text-decoration: none;
-  white-space: nowrap
+  /* white-space: nowrap; */
 }
 
 .navbar-nav {
@@ -11866,424 +11868,7 @@ p.white {
 
 
 /* font awesome css */
-/*!
- * Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- */
-.fa,
-.fas,
-.far,
-.fal,
-.fad,
-.fab {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-}
 
-.fa-lg {
-  font-size: 1.33333em;
-  line-height: 0.75em;
-  vertical-align: -.0667em;
-}
-
-.fa-xs {
-  font-size: .75em;
-}
-
-.fa-sm {
-  font-size: .875em;
-}
-
-.fa-1x {
-  font-size: 1em;
-}
-
-.fa-2x {
-  font-size: 2em;
-}
-
-.fa-3x {
-  font-size: 3em;
-}
-
-.fa-4x {
-  font-size: 4em;
-}
-
-.fa-5x {
-  font-size: 5em;
-}
-
-.fa-6x {
-  font-size: 6em;
-}
-
-.fa-7x {
-  font-size: 7em;
-}
-
-.fa-8x {
-  font-size: 8em;
-}
-
-.fa-9x {
-  font-size: 9em;
-}
-
-.fa-10x {
-  font-size: 10em;
-}
-
-.fa-fw {
-  text-align: center;
-  width: 1.25em;
-}
-
-.fa-ul {
-  list-style-type: none;
-  margin-left: 2.5em;
-  padding-left: 0;
-}
-
-.fa-ul>li {
-  position: relative;
-}
-
-.fa-li {
-  left: -2em;
-  position: absolute;
-  text-align: center;
-  width: 2em;
-  line-height: inherit;
-}
-
-.fa-border {
-  border: solid 0.08em #eee;
-  border-radius: .1em;
-  padding: .2em .25em .15em;
-}
-
-.fa-pull-left {
-  float: left;
-}
-
-.fa-pull-right {
-  float: right;
-}
-
-.fa.fa-pull-left,
-.fas.fa-pull-left,
-.far.fa-pull-left,
-.fal.fa-pull-left,
-.fab.fa-pull-left {
-  margin-right: .3em;
-}
-
-.fa.fa-pull-right,
-.fas.fa-pull-right,
-.far.fa-pull-right,
-.fal.fa-pull-right,
-.fab.fa-pull-right {
-  margin-left: .3em;
-}
-
-.fa-spin {
-  -webkit-animation: fa-spin 2s infinite linear;
-  animation: fa-spin 2s infinite linear;
-}
-
-.fa-pulse {
-  -webkit-animation: fa-spin 1s infinite steps(8);
-  animation: fa-spin 1s infinite steps(8);
-}
-
-@-webkit-keyframes fa-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes fa-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-.fa-rotate-90 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-.fa-rotate-180 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.fa-rotate-270 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
-  -webkit-transform: rotate(270deg);
-  transform: rotate(270deg);
-}
-
-.fa-flip-horizontal {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
-  -webkit-transform: scale(-1, 1);
-  transform: scale(-1, 1);
-}
-
-.fa-flip-vertical {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
-  -webkit-transform: scale(1, -1);
-  transform: scale(1, -1);
-}
-
-.fa-flip-both,
-.fa-flip-horizontal.fa-flip-vertical {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
-  -webkit-transform: scale(-1, -1);
-  transform: scale(-1, -1);
-}
-
-:root .fa-rotate-90,
-:root .fa-rotate-180,
-:root .fa-rotate-270,
-:root .fa-flip-horizontal,
-:root .fa-flip-vertical,
-:root .fa-flip-both {
-  -webkit-filter: none;
-  filter: none;
-}
-
-.fa-stack {
-  display: inline-block;
-  height: 2em;
-  line-height: 2em;
-  position: relative;
-  vertical-align: middle;
-  width: 2.5em;
-}
-
-.fa-stack-1x,
-.fa-stack-2x {
-  left: 0;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-}
-
-.fa-stack-1x {
-  line-height: inherit;
-}
-
-.fa-stack-2x {
-  font-size: 2em;
-}
-
-.fa-inverse {
-  color: #fff;
-}
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-.sr-only-focusable:active,
-.sr-only-focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
-
-@font-face {
-  font-family: 'Font Awesome 5 Brands';
-  font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: url("../webfonts/fa-brands-400.eot");
-  src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg");
-}
-
-.fab {
-  font-family: 'Font Awesome 5 Brands';
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Font Awesome 5 Free';
-  font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: url("../webfonts/fa-regular-400.eot");
-  src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"), url("../webfonts/fa-regular-400.svg#fontawesome") format("svg");
-}
-
-.far {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Font Awesome 5 Free';
-  font-style: normal;
-  font-weight: 900;
-  font-display: block;
-  src: url("../webfonts/fa-solid-900.eot");
-  src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg");
-}
-
-.fa,
-.fas {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-}
-
-/* //font awesome css */
-
-
-/*-- dark and light mode styling --*/
-.mode-container {
-  width: 24px;
-  height: 24px;
-  padding: 0px 0;
-  margin-left: 10px;
-  margin-left: 10px;
-  color: #fff;
-  margin-top: 0px;
-}
-
-.mode-container:hover {
-  color: #fff;
-}
-
-.mode-container i {
-  font-size: 15px;
-}
-
-.gg-sun {
-  position: relative;
-  transform: scale(var(--ggs, 1));
-  height: 24px;
-  background: linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px -6px/2px 6px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px 14px/2px 6px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat -8px 5px/6px 2px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 14px 5px/6px 2px;
-  border-radius: 100px;
-  box-shadow: inset 0 0 0 2px;
-  border: 6px solid transparent;
-}
-
-.gg-moon {
-  overflow: hidden;
-  position: relative;
-  transform: rotate(-135deg) scale(var(--ggs, 1));
-  width: 20px;
-  height: 20px;
-  border: 2px solid;
-  border-bottom: 2px solid transparent;
-}
-
-.gg-moon,
-.gg-moon:after {
-  display: block;
-  box-sizing: border-box;
-  border-radius: 50%;
-  /* color: #fff; */
-}
-
-.nav-fixed .gg-moon,
-.nav-fixed .gg-moon:after {
-  color: #fff;
-}
-
-.gg-moon:after {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 18px;
-  border: 2px solid transparent;
-  box-shadow: 0 0 0 2px;
-  top: 8px;
-  left: 2px;
-}
-
-.gg-sun,
-.gg-sun:after,
-.gg-sun:before {
-  box-sizing: border-box;
-  display: block;
-  width: 24px;
-}
-
-.gg-sun:after,
-.gg-sun:before {
-  content: "";
-  position: absolute;
-  height: 2px;
-  border-right: 4px solid;
-  border-left: 4px solid;
-  left: -6px;
-  top: 5px;
-}
-
-.gg-sun:before {
-  transform: rotate(-45deg);
-}
-
-.gg-sun:after {
-  transform: rotate(45deg);
-}
-
-.mode-container i.gg-sun {
-  display: none;
-}
-
-.mode-container i.gg-moon {
-  display: block;
-  cursor: pointer;
-}
-
-.nav-fixed .mode-container i.gg-moon {
-  color: #fff;
-}
-
-input:checked+.mode-container i.gg-sun {
-  display: block;
-  cursor: pointer;
-}
-
-input:checked+.mode-container i.gg-moon {
-  display: none;
-}
-
-/* .cont-ser-position {
-  color: #fff;
-} */
 
 /*-- //dark and light mode styling --*/
 
@@ -12842,6 +12427,12 @@ nav ul li a:hover {
   letter-spacing: 1px;
 }
 
+@media (max-width: 992){
+  /* .w3l-content-small{
+    margin-top: 1000rem;
+  } */
+}
+
 .title-content-two h6 {
   text-align: left;
 }
@@ -13005,7 +12596,7 @@ ul.follow-social li a {
 @media (max-width: 991px) {
   .my-image {
     height: 450px;
-    overflow: hidden;
+    overflow: auto;
   }
 }
 
@@ -14932,7 +14523,7 @@ footer {
 
 /*-- About Page Styling --*/
 .breadcrumb-bg-about {
-  background: url(../images/banner1.jpg) no-repeat 0px 0px;
+  background: url(../images/banner1.webp) no-repeat 0px 0px;
   background-size: cover;
   position: relative;
   z-index: 0;
@@ -15516,9 +15107,8 @@ p.vhny-para {
 .error {
   color: red;
     display: block;
-    /* color: rgb(49, 49, 49); */
     font-size: 14px;
-    margin: 1rem 0rem 1rem 0rem;
+    /* margin: 1rem 0rem 1rem 0rem; */
 }
 
 @media screen and (max-width: 768px) {

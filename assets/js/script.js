@@ -82,11 +82,28 @@ $(function () {
 /* CONTACT FORM */
 
 $(document).ready(function(){
+
+	$.validator.addMethod("alphabetsonly", function(value, element) {
+		return this.optional(element) || /^[A-Za-z\s]+$/.test(value);
+	}, "Please enter only alphabets.");
+
+	$.validator.addMethod("phoneFormat", function(value, element) {
+		// Check if the phone number starts with a + followed by numbers
+		return this.optional(element) || /^\+\d[\d\s]*$/.test(value);
+	}, "Please enter a valid phone number with a country code starting with + and only numbers.");
+
     $("#submit-form").validate({
+
+		onfocusout: function(element) {
+            this.element(element); // Validate the element on blur
+        },
+
         rules:{
             name:{
                 required:true,
-                minlength:2
+				alphabetsonly: true,
+                minlength:2,
+				maxlength:50
             },
             email:{
                 required:true,
@@ -97,7 +114,9 @@ $(document).ready(function(){
                 minlength:2
             },
 			phone:{
-				number:true
+				// number:true,
+				phoneFormat: true,
+				minlength: 4
 			}
 
         },
@@ -108,6 +127,12 @@ $(document).ready(function(){
 			email:{
 				required:"Please Enter your email"
 			},
+			message:{
+				required:"Please enter a message"
+			},
+			phone: {
+				phoneFormat: "Please enter a valid phone number with a country code starting with +, containing only numbers and spaces."
+			}
 
             
         }
@@ -143,11 +168,32 @@ $("#submit-form").submit(function(e){
 
 /* HIRE FORM */
 $(document).ready(function(){
+
+	$.validator.addMethod("valueNotEquals", function(value, element, arg){
+		return arg !== value;
+	   }, "Value must not equal arg.");
+
+	$.validator.addMethod("alphabetsonly", function(value, element) {
+		return this.optional(element) || /^[A-Za-z\s]+$/.test(value);
+	}, "Please enter only alphabets.");
+
+	$.validator.addMethod("phoneFormat", function(value, element) {
+		// Check if the phone number starts with a + followed by numbers
+		return this.optional(element) || /^\+\d[\d\s]*$/.test(value);
+	}, "Please enter a valid phone number with a country code starting with + and only numbers.");
+
     $("#submit-hire-form").validate({
+
+		onfocusout: function(element) {
+            this.element(element); // Validate the element on blur
+        },
+
         rules:{
             name:{
                 required:true,
-                minlength:2
+				alphabetsonly: true,
+                minlength:2,
+				maxlength:50
             },
             email:{
                 required:true,
@@ -158,8 +204,11 @@ $(document).ready(function(){
                 minlength:2
             },
 			phone:{
-				required:true,
-				number:true
+				phoneFormat: true,
+				minlength: 5,
+			},
+			subject:{
+				valueNotEquals: "default"
 			}
 
         },
@@ -172,6 +221,13 @@ $(document).ready(function(){
 			},
             message:{
 				required:"Enter a message"
+			},
+			phone: {
+				phoneFormat: "Please enter a valid phone number with a country code starting with +, containing only numbers and spaces.",
+				minlength: "Please enter a valid mobile number"
+			},
+			subject:{
+				valueNotEquals: "Please select a service"
 			}
         }
     })
